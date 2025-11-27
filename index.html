@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Tech Profile</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&family=Poppins:wght@300;400;600&display=swap');
+
+        body {
+            margin: 0;
+            background: #050510;
+            font-family: 'Poppins', sans-serif;
+            color: #d7e1ff;
+            overflow-x: hidden;
+        }
+
+        .wrapper {
+            width: 100%;
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #11152b, #0d0f1f);
+            border-radius: 20px;
+            position: relative;
+            box-shadow: 0 0 25px #00d4ff55;
+        }
+
+        .header::after {
+            content: '';
+            position: absolute;
+            top: -2px;
+            left: -2px;
+            right: -2px;
+            bottom: -2px;
+            border-radius: 20px;
+            background: linear-gradient(45deg, #00f0ff, #0077ff, #00f0ff);
+            z-index: -1;
+            filter: blur(25px);
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 4px solid #00e5ff;
+            object-fit: cover;
+            box-shadow: 0 0 20px #00e5ff88;
+            transition: 0.4s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.1) rotate(2deg);
+            box-shadow: 0 0 35px #00e5ff;
+        }
+
+        h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 32px;
+            margin-top: 15px;
+        }
+
+        .tagline {
+            opacity: 0.8;
+            letter-spacing: 2px;
+            font-size: 14px;
+        }
+
+        .section {
+            background: #0b0e20;
+            margin-top: 30px;
+            padding: 25px;
+            border-radius: 15px;
+            border: 1px solid #1a1f35;
+            box-shadow: inset 0 0 15px #0c113355;
+            transition: 0.3s;
+        }
+
+        .section:hover {
+            background: #10142e;
+            box-shadow: inset 0 0 20px #00e1ff33, 0 0 10px #00e1ff33;
+        }
+
+        h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 22px;
+            color: #4ddcff;
+            margin-bottom: 10px;
+        }
+
+        ul li {
+            margin-left: 20px;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            opacity: 0.6;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .profile-img { width: 120px; height: 120px; }
+            h1 { font-size: 26px; }
+            h2 { font-size: 18px; }
+        }
+    
+
+        .profile-layout {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .left-panel {
+            text-align: center;
+            padding: 20px;
+            background: #0b0e20;
+            border-radius: 15px;
+            border: 1px solid #1a1f35;
+        }
+
+        .right-panel {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .info-box {
+            background: #0b0e20;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #1a1f35;
+            transition: .3s;
+        }
+
+        .info-box:hover {
+            background: #11162f;
+            box-shadow: 0 0 12px #00e1ff33;
+        }
+
+
+        .card-strip {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .card-item {
+            background: #0b0e20;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid #1a1f35;
+            transition: 0.3s;
+        }
+
+        .card-item:hover {
+            background: #10142e;
+            box-shadow: 0 0 12px #00e1ff33;
+        }
+
+        @media (max-width: 850px) {
+            .profile-layout {
+                grid-template-columns: 1fr;
+            }
+            .right-panel {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .wrapper {
+                padding: 10px;
+            }
+            h1 { font-size: 24px; }
+            h2 { font-size: 18px; }
+            .profile-img { width: 120px; height: 120px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <div class="profile-layout">
+            <div class="left-panel">
+                <img src="image.png" class="profile-img">
+                <h1>Rj kim Racoma</h1>
+                <p class="tagline">PROGRAMMER • STUDENT</p>
+            </div>
+
+            <div class="right-panel">
+                <div class="info-box">
+                    <h2>ABOUT ME</h2>
+                    <p>Hello! I am Rj kim Racoma, a technology-driven student dedicated to developing modern websites, studying programming concepts, and consistently expanding my knowledge to enhance my abilities.</p>
+                </div>
+
+                <div class="info-box">
+                    <h2>SKILLS</h2>
+                    <ul>
+                        <li>HTML & CSS (Basic)</li>
+                        <li>JavaScript (Basic)</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-strip">
+            <div class="card-item">
+                <h2>CONTACT</h2>
+                <p><strong>Email:</strong> rjracoma0413@gmail.com</p>
+                <p><strong>Phone:</strong> +63 993 192 5729</p>
+                <p><strong>Address:</strong> Brgy. Bagong Silangan, Quezon City, Philippines</p>
+            </div>
+
+            <div class="card-item">
+                <h2>EDUCATION</h2>
+                <p><strong>High School:</strong> Bagong Silangan High School (2019–2022)</p>
+                <p><strong>Senior High School:</strong> Eclaro Academy (2022–2024)</p>
+                <p><strong>College:</strong> BS Information Technology – Bestlink College of the Philippines (2024–Present)</p>
+            </div>
+        </div>
+
+        <footer>
+            © 2025 Gabriel Bonio — All Rights Reserved
+        </footer>
+
+    </div>
+
+</body>
+</html>
